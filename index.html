@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dest/css/all.css">
+    <link rel="shortcut icon" href="src/img/iconfinder_Cat_130236.png" type="image/x-icon">
+    <title>Кототека</title>
+    
+</head>
+<body>
+  <main class="tabs">
+    <div class="tabs-header">
+       <div class="tab-h active" data-tab = "0">Профиль</div>
+       <div class="tab-h" data-tab = "1">Друзья пользователя</div>
+    </div> 
+      <div class="tabs-body">
+        <div class="tab-b" style="display:block">
+          <div class="content">
+            <div class="profile">
+              <img src="src/img/avatat.png" alt="avatar" class="profile__avatar">
+                <input type="button" value="Добавить в друзья" class="profile__add_friend" id="check">
+            </div>
+              <div class="info">
+                <div class="user_name">
+                  <p id="username"><input type="text"  value="Виталя Гора" id="name" class="user_name__value"></p>
+                  <p>г. Нижние Шахты</p>
+                </div>
+                  <div class="user_info">
+                    <p Class="status">Семейное положение </p>
+                      <p class="status_result">холост</p><br>
+                        <p class="phone">Телефон</p>
+                          <p class="phone_number"><input type="tel" name= "tel" value="+7 (982) 797 67 57"  id="phone" class="phone_number__value" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" title="Введите данные в формате +7 (ХХХ) ХХХ ХХ ХХ"></p><br>
+                        <p class="email">E-mail</p>
+                       <p class="email_adres"><a><input type="email"  name= "email" value="artur.torba@mail.ru" id="email" class="email_adres__value"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="введите данные в формате e-mail"></a></p>
+                  </div>
+              <div class="user_interests">
+                <p>Интересы</p>
+                    <select name="select" id="select" class="user_interests__select">
+                      <option class="user_interests__select__option"value=""></option>
+                        <option class="user_interests__select__option" value="musics">музыка</option>
+                        <option class="user_interests__select__option" value="computers">компьютеры</option>
+                          <option class="user_interests__select__option" value="radios">радио</option>
+                       <option class="user_interests__select__option" value="dances">танцы</option>
+                    <option class="user_interests__select__option" value="pussys">кошечки</option>
+                      </select>
+                  <input type="submit" class="interest_btn" value="добавить" id="addfriend">
+                </div>
+              <div class="block_intrest" id="parentElem">
+             </div>
+            </div>
+          </div>
+        </div>
+            
+      <div class="tab-b">
+        <div class="friends_container">
+          <div class="friends_box">
+              <div class="friend_block"><a href="#">
+                <img src="src/img/minAva1.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Лев Бронштейн</a></p>
+                        <p class="friend_city">г. Ханты-Мансийск</p>
+                        <p class="friend_status">Оnline</p>
+                      </div></a>
+                </div> 
+                    
+                    <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva2.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Находка Капитал</a></p>
+                        <p class="friend_city">г. Усть-Бельск</p>
+                        <p class="friend_status"></p>
+                      </div></a>
+                    </div>
+
+                    <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva3.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Яндекс Петренко</a></p>
+                        <p class="friend_city">г. Пермь</p>
+                        <p class="friend_status"></p>
+                      </div></a>
+                    </div>
+
+                    <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva4.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Успех Возможностей</a></p>
+                        <p class="friend_city">г. Радонеж</p>
+                        <p class="friend_status"></p>
+                      </div></a>
+                    </div>
+
+                    <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva5.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Инна Нашлась</a></p>
+                        <p class="friend_city">г. Омск</p>
+                        <p class="friend_status">Оnline</p>
+                      </div></a>
+                    </div>
+
+                    <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva6.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Алла Подольская</a></p>
+                        <p class="friend_city">г. Петропавловск- <br>Камчатский</p>
+                        <p class="friend_status">Оnline</p>
+                      </div></a>
+                    </div>
+
+                <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva1.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Лев Бронштейн</a></p>
+                        <p class="friend_city">г. Ханты-Мансийск</p>
+                        <p class="friend_status">Оnline</p>
+                      </div></a>
+                </div> 
+
+                <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva2.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Находка Капитал</a></p>
+                        <p class="friend_city">г. Усть-Бельск</p>
+                        <p class="friend_status"></p>
+                      </div></a>
+                </div>
+
+                <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva3.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Яндекс Петренко</a></p>
+                        <p class="friend_city">г. Пермь</p>
+                        <p class="friend_status"></p>
+                      </div></a>
+                </div>
+
+                <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva4.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Успех Возможностей</a></p>
+                        <p class="friend_city">г. Радонеж</p>
+                        <p class="friend_status"></p>
+                      </div></a>
+                </div>
+
+                <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva5.png" alt="" class="friend_avatar">
+                      <div class="friend_info">
+                          <p class="friend_name"><a href="#">Инна Нашлась</a></p>
+                        <p class="friend_city">г. Омск</p>
+                        <p class="friend_status">Оnline</p>
+                      </div></a>
+                </div>
+
+                <div class="friend_block"><a href="#">
+                        <img src="src/img/minAva6.png" alt="" class="friend_avatar">
+                  <div class="friend_info">
+                          <p class="friend_name"><a href="#">Алла Подольская</a></p>
+                        <p class="friend_city">г. Петропавловск-Камчатский</p>
+                        <p class="friend_status">Оnline</p>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+  </main>
+    <script src="dest/js/all.js"></script>
+</body>
+</html> 
